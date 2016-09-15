@@ -27,7 +27,7 @@ git commit
 git mv a b
 git commit -am "aからbへ変更しました"
 
-git reset --hard HEAD	編集したファイルを編集前に戻す
+git reset --hard HEAD	編集したファイルを編集前に戻す 最後にcommitした状態へ戻す
 git push   共有へ
 
 git push origin master	originレポジトリのmasterブランチへpushする
