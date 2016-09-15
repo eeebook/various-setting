@@ -1,0 +1,70 @@
+2016/09/15
+
+git init
+
+git clone URL
+
+ls -a
+
+git add filename	ファイルを追加するindexに追加する
+git commit
+
+git checkout fileneme	ローカルリポジトリからファイルを持ってくる
+git commit
+
+git add directoryname	ディレクトリを一括で追加
+git commit
+
+git log
+git log --oneline
+git show hashvalue
+
+git rm filename
+got commit -am 
+git rm dirname
+git commit
+
+git mv a b
+git commit -am "aからbへ変更しました"
+
+git reset --hard HEAD	編集したファイルを編集前に戻す
+git push   共有へ
+
+git push origin master	originレポジトリのmasterブランチへpushする
+
+git pull --rebase	ローカルに取り込み変更を一列で結合
+git pull 		取り込み変更を分岐で記録し結合
+
+git fetch		ローカルに取り込み変更はまだしない
+git diff FETCH_HEAD	取り込まれた変更(FEACH_HEADという変更の先頭ファイル)と変更前の差分
+git rebase FETCH_HEAD	変更を一列で結合
+git merge FETCH_HEAD	変更を分岐で結合
+
+競合が発生したら元のファイルを直すなら編集し
+git add filename
+git rebase --continue
+mergeの場合は
+git add filename
+git commit
+共有の方が間違ってたら結合しないで無視する
+
+git log --oneline --graph
+
+
+git checkout -b newbranchname	ブランチ作成
+git branch   			ブランチ確認
+git checkout  branchname	ブランチ移動
+
+git push -u origin newbranchname	始めて共有ブランチにpushするとき
+git push    	   			二回目以降push
+
+
+git checkout master			マージするブランチに移動
+git merge branchname			マージされるブランチ(消えるブランチ)を指定
+
+
+git branch branchname			タグをつけたいブランチの先頭にタグをつける
+git tag tagname				先頭にタグをつける
+
+
+GitBucket				ローカルで共有レポジトリが作れる
