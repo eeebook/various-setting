@@ -65,6 +65,6 @@ git merge branchname			マージされるブランチ(消えるブランチ)を�
 
 git branch branchname			タグをつけたいブランチの先頭にタグをつける
 git tag tagname				先頭にタグをつける
-
+git push --tags             作成したタグを共有リポジトリに保存
 
 GitBucket				ローカルで共有レポジトリが作れる
