@@ -55,7 +55,7 @@ git checkout -b newbranchname	ブランチ作成
 git branch   			ブランチ確認
 git checkout  branchname	ブランチ移動
 
-git push -u origin newbranchname	始めて共有ブランチにpushするとき
+git push -u projectname newbranchname	始めて共有ブランチにpushするとき
 git push    	   			二回目以降push
 
 
